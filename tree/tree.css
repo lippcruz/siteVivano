@@ -1,0 +1,26 @@
+.tree-page{background:var(--wine) url('../assets/pat-assinatura-tom.svg') repeat;background-size:150px 220px;color:var(--wine);min-height:100vh;min-height:100dvh;display:grid;place-items:center}
+.tree-shell{width:min(calc(100% - 28px),500px);padding-block:28px 18px}
+.tree-paper{position:relative;background:var(--cream);padding:35px 30px 24px;box-shadow:0 18px 60px rgba(17,8,10,.12)}
+.tree-paper::before{content:"";position:absolute;inset:9px;border:1px solid rgba(107,15,26,.3);pointer-events:none}
+.tree-heading{text-align:center;padding-bottom:26px}
+.tree-kicker{font-size:9px;font-weight:500;line-height:1.5;letter-spacing:.22em;text-transform:uppercase;margin-bottom:25px}
+.tree-heading h1{width:210px;max-width:85%;margin-inline:auto}
+.tree-heading h1 a{display:block}
+.tree-heading img{width:100%;height:auto}
+.tree-signature{font:italic 400 21px/1.2 Newsreader,Georgia,serif;margin-top:16px}
+.tree-links{border-top:1px solid rgba(107,15,26,.3)}
+.tree-links>a{display:grid;grid-template-columns:20px 1fr 18px;align-items:center;gap:17px;min-height:75px;padding:14px 0;border-bottom:1px solid rgba(107,15,26,.2);text-decoration:none;transition:background-color .2s}
+.tree-index{font-size:9px;letter-spacing:.1em;align-self:start;padding-top:4px}
+.tree-label{font:400 25px/1.1 Newsreader,Georgia,serif}
+.tree-label small{display:block;margin-top:5px;color:var(--ink);font:400 12px/1.4 Jost,Arial,sans-serif}
+.tree-arrow{font:400 21px/1 Jost,Arial,sans-serif;transition:transform .2s}
+.tree-links>a:hover{background:rgba(107,15,26,.035)}
+.tree-links>a:hover .tree-arrow{transform:translate(2px,-2px)}
+.tree-links>a:focus-visible{outline:2px solid var(--wine);outline-offset:3px}
+.tree-footer{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-top:16px}
+.tree-footer a{display:inline-flex;align-items:center;gap:16px;min-height:44px;font-size:10px;font-weight:500;letter-spacing:.15em;text-transform:uppercase;text-decoration:none}
+.tree-footer img{width:22px;height:auto}
+.tree-bottom{color:var(--cream);text-align:center;font:italic 400 18px/1.2 Newsreader,Georgia,serif;padding-top:20px}
+@media(min-width:600px){.tree-shell{padding-block:40px 24px}.tree-paper{padding:42px 45px 28px}.tree-heading{padding-bottom:30px}.tree-links>a{min-height:78px}.tree-heading h1{width:220px}}
+@media(max-width:359px){.tree-paper{padding-inline:24px}.tree-links>a{gap:12px;grid-template-columns:16px 1fr 16px}.tree-label{font-size:23px}.tree-label small{font-size:11px}.tree-kicker{font-size:8px}}
+@media(prefers-reduced-motion:reduce){.tree-links>a:hover .tree-arrow{transform:none}}
